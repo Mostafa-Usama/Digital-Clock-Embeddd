@@ -1,0 +1,47 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+keypad                                                                            0x01E2      16
+time                                                                              0x01F2       2
+input                                                                             0x01F4       1
+_base_y (alcd.lib)                                                                0x01F5       4
+_lcd_x                                                                            0x01F9       1
+_lcd_y                                                                            0x01FA       1
+_lcd_maxx                                                                         0x01FB       1
+_seed (stdlib.lib)                                                                0x01FC       4
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+hour                                                                              R4,R5        2
+mintue                                                                            R6,R7        2
+second                                                                            R8,R9        2
+x                                                                                 R11          1
+y                                                                                 R10          1
+colloc                                                                            R13          1
+rowloc                                                                            R12          1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+main                                                                              0x000CF     86
+keyfind                                                                           0x00125     70
+hours                                                                             0x0016B      5
+mintues                                                                           0x00170      5
+seconds                                                                           0x00175     26
+display                                                                           0x0018F     23
+clock                                                                             0x001A6     93
+timer                                                                             0x00203     52
+setclock                                                                          0x00237     96
+_lcd_write_nibble_G100                                                            0x00297     21
+_lcd_write_data                                                                   0x002AC     13
+lcd_gotoxy                                                                        0x002B9     20
+lcd_clear                                                                         0x002CD     12
+lcd_putchar                                                                       0x002D9     31
+lcd_puts                                                                          0x002F8     15
+lcd_init                                                                          0x00307     44
+itoa                                                                              0x00333     46
